@@ -26,8 +26,8 @@ Write a program that calculates the time it takes for an object to fall from a h
 
 ```
 t = sqrt(2h/g)
-```
 where g = 9.81 m/s^2.
+```
 
 ## Exercise 07
 
