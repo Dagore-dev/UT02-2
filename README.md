@@ -35,7 +35,7 @@ Make a program that calculates the average of three grades.
 
 ## Exercise 08
 
-Extend the program above to say the bulletin grade (poor, fair, good, good, or outstanding).
+Extend the program above to say the bulletin grade (insufficient, sufficient, good, remarkable or outstanding).
 
 ## Exercise 09
 
