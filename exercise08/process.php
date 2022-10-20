@@ -12,11 +12,28 @@
 
     echo "<p>The mean of $grade1, $grade2, $grade3 is equal to $result</p>";
     
-    $bulletin = match ($result) {
-      $result < 5 => 'Insufficient',
-      $result < 7 => 'Sufficient',
-      // TODO
-    };
+    $bulletin;
+
+    if ($result < 5)
+    {
+      $bulletin = 'Insufficient';
+    }
+    elseif ($result < 7)
+    {
+      $bulletin = 'Sufficient';
+    }
+    elseif ($result < 9)
+    {
+      $bulletin = 'Good';
+    }
+    elseif ($result < 10)
+    {
+      $bulletin = 'Remarkable';
+    }
+    else
+    {
+      $bulletin = 'Outstanding';
+    }
 
     echo "<p>$bulletin.</p>";
   }
