@@ -79,4 +79,4 @@ Write a program that tells us how many digits there are in a whole number that c
 
 ## Exercise 19
 
-Make a program that tells if a positive integer entered by keyboard is capital. Numbers of up to 5 digits are allowed.
+Make a program that tells if a positive integer entered by keyboard is capicua. Numbers of up to 5 digits are allowed.
