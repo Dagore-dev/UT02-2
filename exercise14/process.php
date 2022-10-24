@@ -10,7 +10,7 @@ if (isset($number))
     ($number % 2 === 0 && $number % 5 === 0) => "$number is even and divisible by 5",
     $number % 2 === 0 => "$number is even",
     $number % 5 === 0 => "$number is divisible by 5",
-    default => "$number is not a integer"
+    default => "$number is not even and is not divisible by 5"
   };
 
   echo "<p>$output.</p>";
