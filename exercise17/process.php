@@ -5,7 +5,7 @@
 
   if (isset($int))
   {
-    $last_digit = $int[0];
+    $last_digit = ((string) abs((int) $int))[0];
     echo "<p>The first digit of $int is $last_digit.</p>";
   }
 ?>
