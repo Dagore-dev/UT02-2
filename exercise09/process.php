@@ -7,22 +7,43 @@
 
   if (isset($a, $b, $c))
   {
+    $a = (int) $a;
+    $b = (int) $b;
+    $c = (int) $c;
+
     $inner_sqrt = (($b * $b) - (4 * $a * $c));
     
     if ($inner_sqrt >= 0)
     {
         $sqrt = sqrt($inner_sqrt);
-        $positive_result = number_format((-$b + $sqrt) / (2 * $a), 2);
 
-        if ($inner_sqrt == 0)
+        if ($a !== 0)
         {
-          echo "<p>The given equation has only one solution: $positive_result</p>";
+          $positive_result = number_format((-$b + $sqrt) / (2 * $a), 2);
+
+          if ($inner_sqrt == 0)
+          {
+            echo "<p>The given equation has only one solution: $positive_result.</p>";
+          }
+          else
+          {
+            $negative_result = number_format((-$b - $sqrt) / (2 * $a), 2);
+  
+            echo "The given equation has two solutions: $positive_result and $negative_result.";
+          }
         }
         else
         {
-          $negative_result = number_format((-$b - $sqrt) / (2 * $a), 2);
+          if ($b !== 0)
+          {
+            $linear_solution = -$c / $b;
 
-          echo "The given equation has two solutions: $positive_result and $negative_result";
+            echo "<p>The given equation has only one solution: $linear_solution.</p>";
+          }
+          else
+          {
+            echo "<p>The given equation has infinite solutions.</p>";
+          }
         }
 
     }
